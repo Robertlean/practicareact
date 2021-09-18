@@ -2,25 +2,26 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-
-  let hi = "Soy nuevo en este mundo"
+  const [linea1, setLinea1] = useState('')
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          {hi}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <select>
+        <option value="valor 1">Primer meme</option>
+        <option value="valor 2">Segundo meme</option>
+        <option value="valor 3">Tercer meme</option>
+        <option value="valor 4">Cuarto valor</option>
+      </select> <br />
+
+      <input type="text" placeholder="linea 1"><br />
+      <input type="text" placeholder="linea 2"><br />
+      <button>Exportar</button>
+
+      <div> 
+        <span>Linea 1</span>
+        <span>Linea 2</span>
+
+        <img src=""></img>
+      </div>
     </div>
   );
 }
